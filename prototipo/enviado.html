@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="enviado.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/all.min.css">
+
+</head>
+<body>
+
+    <?php 
+    include 'enviado.php'; 
+    ?>
+
+    <nav>
+        <div class="logo"> Ilumina </div>
+        <div class="menu-btn">
+            <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+        </div>
+        <ul>
+            <li> <a href="#"> </a> </li>
+            <li> <a href="#"> </a> </li>
+            <li> <a href="mapa.html" class="active"> Denúncia </a> </li>
+            <li> <a href="painel.html" > Painel </a> </li>
+            <li> <a href="login.html"> Sair</a> </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="checkmark">
+            <br>
+            <i class="fa fa-check-circle"></i>
+        </div>
+        <h1>Terceira Etapa: Denúncia enviada!</h1>
+       <div class="texto"> <p>Agradecemos sua colaboração para tornarmos a cidade um lugar melhor.</p> </div>
+       <a href="painel.html" style="text-decoration: none;">
+        <button>Voltar para o painel</button>
+    </a>
+
+    </div>
+    <footer>
+        <div class="containers">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>&copy; 2023 Ilumina - Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="enviado.css"></script>
+</body>
+</html>

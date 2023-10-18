@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatar Problema com Poste de Luz</title>
+    <link rel="stylesheet" href="dois.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"> Ilumina </div>
+        <div class="menu-btn">
+            <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+        </div>
+        <ul>
+            <li> <a href="index.html" > Home </a> </li>
+            <li> <a href="aboutus.html"> Sobre Nós</a> </li>
+            <li> <a href="contact.html"> Contato</a> </li>
+            <li> <a href="um.html" class="active"> Serviços</a> </li>
+            <li> <a href="login.html"> Entrar</a> </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="login-container">
+            <h2>Estamos quase lá...</h2>
+            <form action="dois.php" method="POST">
+                <label for="localizacao">Localização do Poste de Luz (Endereço, CEP e Coordenadas Geográficas):</label> 
+                    <input type="text" id="localizacao" name="localizacao" required placeholder="Exemplo: Rua Nome, CEP: 12345, Lat: 12.345, Long: -67.890">
+                    <div class="alerta">
+                    <p>Cuidado: Alterações manuais podem interferir a precisão da localização. De preferência, utilize o mapa.
+                    </div>
+                    <label for="descricao">Descrição do Problema:</label>
+                <textarea id="descricao" name="descricao" rows="4" required></textarea>
+                <button type="submit" href="tres.html">Enviar Relato</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="containers">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>&copy; 2023 Ilumina - Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="dois.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="mapa.css"> 
+</head>
+<body>
+
+    <?php 
+    include 'mapa.php'; 
+    ?>
+
+    <div class="content">
+        <nav>
+            <div class="logo"> Ilumina </div>
+            <div class="menu-btn">
+                <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+            </div>
+            <ul>
+                <li> <a href="#"> </a> </li>
+                <li> <a href="#"> </a> </li>
+                <li> <a href="mapa.html" class="active"> Denúncia </a> </li>
+                <li> <a href="painel.html" > Painel </a> </li>
+                <li> <a href="login.html"> Sair</a> </li>
+            </ul>
+        </nav>
+
+        <div id="map"></div>
+        <br> <br>
+        <h2> Primeira Etapa: </h2>
+        <h2>Forneça a localização</h2>
+        <br>
+        <div id="location-info">
+            <p class="location-text"><strong>Latitude:</strong> <span id="latitude"></span></p>
+            <p class="location-text"><strong>Longitude:</strong> <span id="longitude"></span></p>
+            <p class="location-text"><strong>Rua:</strong> <span id="street"></span></p>
+            <p class="location-text"><strong>CEP:</strong> <span id="postalCode"></span></p>
+        </div>
+       
+       
+        <button id="avancar-button" onclick="redirectToDenuncia();">Avançar</button>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>&copy; 2023 Ilumina - Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="mapa.js"></script>
+</body>
+</html>

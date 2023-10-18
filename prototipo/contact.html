@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contato.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+   
+</head>
+<body>
+<div class="separador">
+    <nav>
+        <div class="logo"> Ilumina </div>
+
+        <div class="menu-btn">
+            <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+        </div>
+
+        <ul>
+            <li> <a href="index.html" > Home </a> </li>
+            <li> <a href="aboutus.html"> Sobre Nós</a> </li>
+            <li> <a href="contact.html" class="active"> Contato</a> </li>
+            <li> <a href="um.html"> Serviços</a> </li>
+            <li> <a href="login.html"> Entrar</a> </li>
+        </ul>
+    </nav>
+
+
+    <section class="sec">
+        <h2>Contato</h2>
+        <br>
+        <p>Se você deseja entrar em contato conosco para obter mais informações sobre nosso projeto, tem alguma pergunta ou simplesmente deseja fazer parte da nossa jornada, estamos aqui para ouvir você. Sua opinião é fundamental para o nosso trabalho, e estamos ansiosos para colaborar e compartilhar nossas ideias com você.
+        </p> <br>
+           <p> Sinta-se à vontade para preencher o formulário abaixo ou nos enviar um e-mail diretamente. Nossa equipe está pronta para responder a todas as suas dúvidas e receber suas sugestões.
+        </p>
+            <br> <br>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+</div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>&copy; 2023 Ilumina - Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        window.addEventListener('scroll', function() {
+            var navbar = document.querySelector('.navbar');
+            var scrollY = window.scrollY || window.pageYOffset;
+
+            if (scrollY > 100) { // Mude 100 para o ponto de rolagem desejado
+                navbar.classList.add('fixed');
+            } else {
+                navbar.classList.remove('fixed');
+            }
+        });
+    </script>
+    <script>
+        var ul = document.querySelector('nav ul');
+var menuBtn = document.querySelector('.menu-btn i');
+
+function menuShow() {
+    if (ul.classList.contains('open')) {
+        ul.classList.remove('open');
+    }else{
+        ul.classList.add('open');
+    }
+}
+    </script>
+
+</body>
+</html>

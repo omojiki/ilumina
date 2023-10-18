@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="inicial.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+   
+</head>
+<body>
+
+    <nav>
+        <div class="logo"> Ilumina </div>
+
+        <div class="menu-btn">
+            <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+        </div>
+
+        <ul>
+            <li> <a href="inicial.html" class="active"> Home </a> </li>
+            <li> <a href="aboutus.html"> Sobre Nós</a> </li>
+            <li> <a href="contact.html"> Contato</a> </li>
+            <li> <a href="um.html"> Serviços</a> </li>
+            <li> <a href="login.html"> Entrar</a> </li>
+        </ul>
+    </nav>
+ <section class="sec">
+        
+        <h2>  Bem-Vindo ao Ilumina: Relate Problemas em Postes de Luz </h2>
+        
+
+Seja parte da mudança e ajude a iluminar o caminho para um futuro mais seguro e sustentável! O Ilumina é a plataforma que coloca o poder nas suas mãos para relatar problemas em postes de luz na sua comunidade.
+<br><br>
+<h3>
+O Que Fazemos:</h3>
+No Ilumina, acreditamos que uma iluminação pública eficaz é essencial para a segurança e qualidade de vida em nossas cidades. Nosso objetivo é tornar mais fácil para você relatar e resolver problemas em postes de luz. Seja uma lâmpada apagada, luz piscando ou qualquer outro problema, estamos aqui para ajudar.
+<br><br><h3>
+Localização Simples:</h3> Use nosso mapa interativo para encontrar o poste de luz com problemas. Você pode inserir o endereço ou permitir que nossa geolocalização encontre o poste automaticamente.
+<br><br><h3>
+Relate o Problema: </h3> Com apenas alguns cliques, você pode relatar o problema que encontrou no poste de luz. Sua contribuição é essencial para manter nossa cidade segura e iluminada.
+<br><br><h3>
+Acompanhamento: </h3>Fique atualizado sobre o status do seu relatório. Nossa equipe trabalha incansavelmente para garantir que os problemas sejam resolvidos o mais rápido possível.
+<br><br><h3>
+Por que é Importante:</h3>
+Além de garantir que nossas cidades sejam bem iluminadas, sua participação também contribui para o Objetivo de Desenvolvimento Sustentável (ODS) 7 - Energia Acessível e Limpa. Juntos, estamos promovendo a paz, a segurança e um ambiente mais sustentável.
+<br><br><h3>
+Seja um Agente da Mudança:</h3> Junte-se a nós na missão de tornar nossas cidades mais seguras e sustentáveis. Comece hoje mesmo, e vamos iluminar o futuro juntos!
+
+ <br> <br>
+
+        </p>
+</section>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>&copy; 2023 Ilumina - Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        window.addEventListener('scroll', function() {
+            var navbar = document.querySelector('.navbar');
+            var scrollY = window.scrollY || window.pageYOffset;
+
+            if (scrollY > 100) { // Mude 100 para o ponto de rolagem desejado
+                navbar.classList.add('fixed');
+            } else {
+                navbar.classList.remove('fixed');
+            }
+        });
+    </script>
+    <script>
+        var ul = document.querySelector('nav ul');
+var menuBtn = document.querySelector('.menu-btn i');
+
+function menuShow() {
+    if (ul.classList.contains('open')) {
+        ul.classList.remove('open');
+    }else{
+        ul.classList.add('open');
+    }
+}
+    </script>
+
+</body>
+</html>

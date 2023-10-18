@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="termos.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+   
+</head>
+<body>
+
+    <nav>
+        <div class="logo"> Ilumina </div>
+
+        <div class="menu-btn">
+            <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+        </div>
+
+        <ul>
+            <li> <a href="index.html" class="active"> Home </a> </li>
+            <li> <a href="aboutus.html"> Sobre Nós</a> </li>
+            <li> <a href="contact.html"> Contato</a> </li>
+            <li> <a href="um.html"> Serviços</a> </li>
+            <li> <a href="login.html"> Entrar</a> </li>
+        </ul>
+    </nav>
+ <section class="sec">
+        
+        <h2> Termos de uso </h2>
+        
+
+Por favor, leia atentamente estes Termos de Uso antes de usar o nosso site.
+
+<br><br>
+<h3>
+Aceitação dos Termos
+</h3>
+Ao usar este site, você concorda em cumprir e estar vinculado por estes Termos. Se você não concordar com estes Termos, por favor, não use o site<br><br><h3>
+Descrição dos Serviços</h3> O site Ilumina oferece serviços de coleta de denúncias de postes de luz e fornece informações relacionadas a manutenção e iluminação pública.
+<br><br><h3>
+Direitos Autorais
+</h3> Todo o conteúdo deste site, incluindo textos, imagens, logotipos e outros elementos, é protegido por direitos autorais e pertence à equipe "O Carro de Ruth é Ford". Você não pode reproduzir, distribuir ou usar esse conteúdo sem autorização prévia por escrito.
+<br><br><h3>
+Privacidade: </h3> Nossa política de privacidade descreve como coletamos, usamos e protegemos suas informações pessoais. Ao usar o site, você concorda com a nossa política de privacidade.
+<br><br><h3>
+Registro e Conta de Usuário (Opcional)</h3>
+Para acessar determinados recursos do site, você pode ser solicitado a se registrar e criar uma conta. Você é responsável por manter a confidencialidade de sua senha e informações de conta.
+<br><br><h3>
+Comportamento do Usuário:</h3> Você concorda em não usar o site para envio de conteúdo ilegal, difamatório, ameaçador, prejudicial, ou qualquer conteúdo que viole os direitos de terceiros.
+<br><br><h3>Responsabilidades do Usuário</h3> Você é responsável pelo conteúdo que você envia ao site, incluindo denúncias de postes de luz. O site não verifica todas as denúncias e não endossa nenhum conteúdo específico.
+<br><br><h3>Isenção de Responsabilidade</h3> Este site é fornecido "no estado em que se encontra" e não garantimos que ele estará livre de erros ou interrupções. Não somos responsáveis por quaisquer danos diretos, indiretos ou consequentes resultantes do uso deste site.
+<br><br><h3>Leis e Jurisdição</h3> Estes Termos são regidos pelas leis do Brasil, Rio Grande do Sul e quaisquer disputas serão resolvidas na jurisdição de Uruguaiana, Rio Grande do Sul.
+<br><br><h3>Modificações dos Termos</h3> Reservamo-nos o direito de atualizar ou modificar estes Termos. As alterações serão efetivas imediatamente após a publicação dos Termos revisados no site. Continuar a usar o site após tais alterações constituirá sua aceitação dos Termos revisados.
+<br><br><h3>Rescisão</h3> Reservamo-nos o direito de encerrar o acesso ao site a qualquer momento e por qualquer motivo.
+<br><br><h3>Contato</h3> Se você tiver alguma dúvida ou preocupação sobre estes Termos, entre em contato conosco em email@email.com.
+
+
+
+ <br> <br>
+
+        </p>
+</section>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>&copy; 2023 Ilumina - Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        window.addEventListener('scroll', function() {
+            var navbar = document.querySelector('.navbar');
+            var scrollY = window.scrollY || window.pageYOffset;
+
+            if (scrollY > 100) { // Mude 100 para o ponto de rolagem desejado
+                navbar.classList.add('fixed');
+            } else {
+                navbar.classList.remove('fixed');
+            }
+        });
+    </script>
+    <script>
+        var ul = document.querySelector('nav ul');
+var menuBtn = document.querySelector('.menu-btn i');
+
+function menuShow() {
+    if (ul.classList.contains('open')) {
+        ul.classList.remove('open');
+    }else{
+        ul.classList.add('open');
+    }
+}
+    </script>
+
+</body>
+</html>

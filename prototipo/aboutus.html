@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="aboutus.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+   
+</head>
+<body>
+
+    <nav>
+        <div class="logo"> Ilumina </div>
+
+        <div class="menu-btn">
+            <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+        </div>
+
+        <ul>
+            <li> <a href="index.html" > Home </a> </li>
+            <li> <a href="aboutus.html" class="active"> Sobre Nós</a> </li>
+            <li> <a href="contact.html"> Contato</a> </li>
+            <li> <a href="um.html"> Serviços</a> </li>
+            <li> <a href="login.html"> Entrar</a> </li>
+        </ul>
+    </nav>
+
+    <section class="sec">
+        
+        <h2>  Sobre nós </h2>
+        <br> 
+
+            Nossa equipe é formada por estudantes que se uniram para participar da competição "Leap Hubs BR", uma iniciativa promovida pelo Instituto Federal Farroupilha e a Fundação Global Peace Foundation, por meio da nossa escola.
+<br><br>
+Trabalhamos com um objetivo claro: desenvolver uma solução inovadora para iluminação, alinhada com a ODS 7 (Objetivo de Desenvolvimento Sustentável 7) da Agenda 2030. Composta por três estudantes do curso de informática, nossa equipe foca em desenvolver o protótipo do site, enquanto os outros três, do curso de administração, se dedicam a apresentar nossa ideia por meio de um Pitch.
+<br><br>
+Através da colaboração e sinergia entre as nossas áreas de especialização, buscamos criar um projeto que atenda às necessidades de iluminação de alta qualidade. Acreditamos que a energia limpa e acessível é fundamental para o desenvolvimento sustentável e o bem-estar de todos.
+<br><br>
+Estamos comprometidos em fazer parte desta jornada e ansiosos para compartilhar nosso trabalho e ideias com o mundo. Entre em contato conosco para saber mais sobre nossa equipe e como estamos moldando o futuro da iluminação, contribuindo para um futuro mais sustentável e em consonância com a ODS 7 da Agenda 2030.
+<br><br>
+
+<h2>Equipe:</h2>
+<br>
+Alice Wünsch Padão
+<br>
+Angélica Carolina Aura Schreiber
+<br>
+Clara Pinto Gomes
+<br>
+<br>
+Daniel Dorneles Façanha
+<br>
+Pedro Menna Barreto Rossa
+<br>
+Pedro Gonzalez
+
+</section>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>&copy; 2023 Ilumina - Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        window.addEventListener('scroll', function() {
+            var navbar = document.querySelector('.navbar');
+            var scrollY = window.scrollY || window.pageYOffset;
+
+            if (scrollY > 100) { // Mude 100 para o ponto de rolagem desejado
+                navbar.classList.add('fixed');
+            } else {
+                navbar.classList.remove('fixed');
+            }
+        });
+    </script>
+    <script>
+        var ul = document.querySelector('nav ul');
+var menuBtn = document.querySelector('.menu-btn i');
+
+function menuShow() {
+    if (ul.classList.contains('open')) {
+        ul.classList.remove('open');
+    }else{
+        ul.classList.add('open');
+    }
+}
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Navegação</title>
+
+    <!-- Inclua as referências ao Bootstrap CSS e JavaScript aqui -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="painel.css">
+</head>
+<body>
+
+    <?php 
+    include 'painel.php'; 
+    ?>
+
+
+    <div class="container">
+        <div class="list-container">
+            <div id="nomeUsuario"> <h1> Olá! O que gostaria de fazer?</h1></div>
+            <!-- Outro conteúdo da página aqui -->
+            <div class="list-group">
+                <a href="mapa.html" class="list-group-item">Denúncia</a>
+                <form method="POST" action="andamento.php"></form>
+                <a href="andamento.html" class="list-group-item">Monitoramento</a>
+                <a href="login.html" class="list-group-item red-box">Encerrar Sessão</a>
+            </div>
+        </div>
+    </div>
+
+<!-- Inclua as referências ao Bootstrap JavaScript (jQuery, Popper.js e Bootstrap.js) aqui -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
